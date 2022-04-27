@@ -1,0 +1,11 @@
+.ant-layout {
+  min-height: 100vh !important; /* Override antd height to make full page */
+}
+
+.ant-space {
+  display: flex !important; /* Override antd space to make full page */
+}
+
+.center {
+  margin: auto;
+}
