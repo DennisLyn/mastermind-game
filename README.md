@@ -42,3 +42,37 @@ https://reactjs.org/
 
 # Installation
 
+### Clone project
+```
+$ git clone https://github.com/DennisLyn/mastermind-game.git
+```
+
+### Install API Server (In the root of the project)
+
+```
+$ npm install
+```
+### Start API Server
+```
+$ npm start
+```
+The API server will run and listen port 3001. (http://localhost:3001)
+
+### Install web front end server
+Lauch another terminal to run the web front end server
+```
+$ cd webserver
+```
+```
+$ npm install
+```
+### Start web front end server
+```
+$ npm start
+```
+The web front end server will run and listen port 3000. (http://localhost:3000)
+
+You can use web browser to browse the web site and play game now.
+
+![Layout02](https://user-images.githubusercontent.com/99282632/165682514-bc0a0327-973a-440a-8a6b-6421b52cb4a3.jpg)
+
