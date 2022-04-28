@@ -35,6 +35,10 @@ const GAME_STATUS = {
   lost: 'lost'
 };
 
+app.get("/", (req, res) => {
+  res.status(200).send('API server is runnig.');
+});
+
 /**
  * Handles incoming requests to create a game based on level, save data in db.json, and return game data to client
  * URL: POST /api/game
