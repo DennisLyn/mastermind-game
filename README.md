@@ -18,3 +18,27 @@ Mastermind Game is a web application built and implemented by Node, Express, Rea
 
 # Tech Chosen for this project
 For this game, I chose to use Web technologies to build it because Web allows users to see rich UI and play it on Desktop or mobile easily. Besides, considering development productivity, I chose Node, Express, React and Ant Design and these combined technologies helped me to build, run and implement this project easily. It’s also easier to set up and run this project in different systems (Mac, Windows and Linux) compared to other technologies.
+
+- Node.js & NPM - Javascript runtime engine & Node package manager. I used these to install node libraries, run, build and start the projects for server and client code. It allows me to maintain and run server and client code with the same command lines.
+https://nodejs.org/en/
+
+- Express.js - Node.js web application framework. I used it to build a Web server and API endpoints. It’s very lightweight and can be set up and run in any system (e.g. Windows, Mac, Linux) easily. 
+https://expressjs.com/
+
+- React.js - Javascript library for building UI. I used it to build Web client pages. It’s lightweight and allows me to build client routes, and pages easily. Also, it triggers UI changes when the data is changed (useState) so I could easily implement the dynamic UI.
+https://reactjs.org/
+
+- Ant Design - React UI library for building rich UI components. It supports responsive UI and nice styles. I used it to create client page layout, navigation bar, buttons, table, etc. Therefore, I didn’t spend much time implementing UI components and styles. It boosted my development productivity.
+
+# Project design & architecture
+- Web front end server: The server provides the web interface and related information for users to play the game.
+- Backend API server: The server plays the main control center to host the games by providing the APIs below:
+  1. Creating game API (Using random.org API to generate the random number)
+  2. Guessing number API
+  3. Providing hints API
+- Data layer: Using db.json to save the information of the games.
+
+![Layout](https://user-images.githubusercontent.com/99282632/165676819-3712e146-7567-43c8-a1c8-a4695e7ff070.jpg)
+
+# Installation
+
