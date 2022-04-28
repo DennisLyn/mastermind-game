@@ -48,7 +48,9 @@ $ git clone https://github.com/DennisLyn/mastermind-game.git
 ```
 
 ### Install API Server (In the root of the project)
-
+```
+$ cd mastermind-game
+```
 ```
 $ npm install
 ```
