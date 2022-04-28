@@ -273,7 +273,7 @@ app.get("/api/game/:id/hint", (req, res) => {
       res.status(404).send({error: `Data not found for game id: ${gameId}`});
       return;
     }
-
+    
     const timestamp = new Date().getTime();
     let remainingHintTimes = dbData[gameId].remainingHintTimes;
     let hintCacheNumber = dbData[gameId].hintCacheNumber;
@@ -281,6 +281,7 @@ app.get("/api/game/:id/hint", (req, res) => {
     let numberOfNChar = (hintCacheNumber.match(/n/g)||[]).length; 
     let hintNumber;
 
+    // Check if the hints run out.
     if(remainingHintTimes === 0 || numberOfNChar === digitNum) {      
       res.status(200).send({data: {
         id: gameId,
@@ -289,15 +290,22 @@ app.get("/api/game/:id/hint", (req, res) => {
       }});
       return;
     } 
-    remainingHintTimes = remainingHintTimes -1;
+    remainingHintTimes = remainingHintTimes - 1;
 
+    /**
+     * Start to providee the hint number to the player.
+     * The while loop starts to get one digit number from random location
+     * If the number is already taken and the character is 'n',
+     *   the loop keeps getting another number until the character is not 'n'.
+     * 
+     */
     do{
         hintNumberLocation = Math.floor(Math.random() * digitNum );      
     }
     while (hintCacheNumber[hintNumberLocation] === 'n');
     
     hintNumber = hintCacheNumber[hintNumberLocation]    
-    //replace the number with 'n'.
+    // The number is taken and the program replaces the number with 'n'.
     hintCacheNumber=hintCacheNumber.substring(0,hintNumberLocation)+'n'+hintCacheNumber.substring(hintNumberLocation+1);
     
     // For debugging
