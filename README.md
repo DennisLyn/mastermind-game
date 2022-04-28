@@ -17,7 +17,7 @@ Mastermind Game is a web application built and implemented by Node, Express, Rea
 - **Responsive UI** - The UI is responsive and supports both desktop and mobile screens.
 
 # Tech Chosen for this project
-For this game, I chose to use Web technologies to build it because Web allows users to see rich UI and play it on Desktop or mobile easily. Besides, considering development productivity, I chose Node, Express, React and Ant Design and these combined technologies helped me to build, run and implement this project easily. It’s also easier to set up and run this project in different systems (Mac, Windows and Linux) compared to other technologies.
+For this game, I chose to use Web technologies to build it because Web allows users to see rich UI and play it on Desktop or mobile easily. Besides, considering development productivity, I chose Node, Express, React and Ant Design and these combined technologies helped me to build, run and implement this project easily. It’s also easier to set up and run this project in different systems (Mac, Windows, and Linux) compared to other technologies.
 
 - **Node.js & NPM** - Javascript runtime engine & Node package manager. I used these to install node libraries, run, build and start the projects for server and client code. It allows me to maintain and run server and client code with the same command lines.
 https://nodejs.org/en/
