@@ -63,7 +63,7 @@ $ npm start
 The API server will run and listen port 3001. (http://localhost:3001)
 
 ### Install web front end server  (In the root of the project)
-Launch another terminal to run the web front end server
+Launch another terminal to run the web front end server.
 ```
 $ cd mastermind-game
 $ cd webserver
