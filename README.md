@@ -41,7 +41,9 @@ https://reactjs.org/
 ![Layout](https://user-images.githubusercontent.com/99282632/165676819-3712e146-7567-43c8-a1c8-a4695e7ff070.jpg)
 
 # Installation
-
+### Prerequisites
+- Make sure Node and NPM are installed on the computer. We can download both at nodejs.org (NPM is included in the Node installation)
+- Make sure Git is installed on the computer. This is necessary for deploying our application. We can get it at git-scm.com
 ### Clone project
 ```
 $ git clone https://github.com/DennisLyn/mastermind-game.git
